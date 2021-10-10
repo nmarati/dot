@@ -4,20 +4,21 @@ dot.home();
 dot.fillScreen();
 dot.home();
 dot.penDown();
-dot.forward();
+dot.moveForward();
 dot.turnRight();
-dot.forward();
+dot.moveForward();
 dot.turnLeft();
-dot.backward();
+dot.moveBackward();
 dot.penUp();
 dot.speed(6);
-dot.forward();
+dot.moveForward();
 dot.erase();
-dot.forward();
+dot.moveForward();
 dot.turnRight();
-dot.forward();
+dot.moveForward();
 dot.turnRight();
 for (let i = 0; i < 3; i++) {
-    dot.forward();
+    dot.moveForward();
 }
+dot.home();
 

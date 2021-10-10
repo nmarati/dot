@@ -1,26 +1,84 @@
-# Kodely.io extension for dot an implementation of turtle
+# Kodley dot 
 
-A microbit extension for dot an implementation of turtle 
+A micro:bit extension for **dot** an implementation of LOGO like turtle. 
+**dot** is a single pixel LED that can be moved around the micro:bit screen. Primary focus of **dot**, is to introduce concepts like sequencing, loops etc.
 
-## Kodely dot
+# Kodely dot reference
 
-* home 
+## home #home
+`dot.home()` moves the **dot** to the center of the screen. **dot** will be facing forward and pen will be in down mode
+
+```sig
 dot.home()
+```
+## move forward #move_forward
+`dot.moveForward()` moves the **dot** one step forward, in the current direction. If the pen is set to down,  it will highlight the LED in that position.
 
-This repository can be added as an **extension** in MakeCode.
+```javascript
+dot.moveForward();
+```
+## move backward #move_backward
+`dot.moveBackward()` moves the **dot** one step backward based on the current direction. If the pen is set to down, it will highlight the LED in that position.
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/kodely-io/dot** and import
+```javascript
+dot.moveBackward();
+```
+## turn right #turn_right
+`dot.turnRight()` turns the **dot** to the right 90 degrees.
 
+```javascript
+dot.turnRight();
+```
+## turn left #turn_left
+`dot.turnLeft()` turns the **dot** to the left 90 degrees.
 
-## Blocks preview
+```javascript
+dot.turnLeft();
+```
+## penDown #pendown
+`dot.penDown()` sets the **dot**  draw mode to ON. Turns the LEDs when it moves.
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
+```javascript
+dot.penDown();
+```
+## penUp #penup
+`dot.penUp()` sets the **dot** draw mode to OFF. Does not the LEDs when it moves.
 
-![A rendered view of the blocks](https://github.com/kodely-io/dot/raw/master/.github/makecode/blocks.png)
+```javascript
+dot.penUp();
+```
+## erase #erase
+`dot.erase()` turns OFF the LED at the current position.
+
+```javascript
+dot.erase();
+```
+## fillScreen #fillscreen
+`dot.fillScreen()` turns ON all the LEDs on the screen and sets **dot** to home position.
+
+```javascript
+dot.fillScreen();
+```
+## clearScreen #clearscreen
+`dot.clearScreen()` turns OFF all the LEDs on the screen and sets **dot** to home position.
+
+```javascript
+dot.clearScreen();
+```
+## speed #speed
+`dot.speed()` determines the speed of how fast **dot** moves on the screen. It is set to default speed of 5.
+
+```javascript
+dot.speed();
+```
+
+# License
+
+MIT
+
+# Supported targets
+
+* for PXT/microbit
 
 #### Metadata (used for search, rendering)
 

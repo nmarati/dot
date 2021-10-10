@@ -22,14 +22,15 @@ namespace dot {
     //% blockId=turtlehome
     //% block="home"
     //% weight=1000
+    //% help=dot/home
     export function home(): void {
         // Add code here
         led.plotBrightness(_x, _y, _prevpixel * 100)
         _x = _y = _prevx = _prevy = 2;
         _direction = 1;
+        _pen = 1;
         _prevpixel = 0;
         led.plotBrightness(_x, _y, 255);
-
     }
 
     /**
@@ -60,7 +61,7 @@ namespace dot {
     //% blockId=turtle_speed
     //% block="speed %turtleSpeed"
     //% turtleSpeed.min=1 turtleSpeed.max=10 turtleSpeed.defl=5
-    //% weight=850
+    //% weight=350
     export function speed(turtleSpeed: number): void {
         _turtleSpeed = turtleSpeed;
     }
@@ -91,7 +92,7 @@ namespace dot {
     //% blockId=turtle_move_forward
     //% block="move forward"
     //% weight=650
-    export function forward(): void {
+    export function moveForward(): void {
         let _incr = 1;
         if (_direction == 1 || _direction == 4) _incr = -1
 
@@ -111,7 +112,7 @@ namespace dot {
         }
         _prevpixel = led.point(_x, _y) ? 1 : 0;
         led.plotBrightness(_x, _y, 255);
-        basic.pause(_turtleSpeed * 100)
+        basic.pause((10-_turtleSpeed) * 100)
     }
 
     /**
@@ -120,7 +121,7 @@ namespace dot {
     //% blockId=turtle_move_backward
     //% block="move backward"
     //% weight=600
-    export function backward(): void {
+    export function moveBackward(): void {
         let _incr = -1;
         if (_direction == 1 || _direction == 4) _incr = 1
 
@@ -140,7 +141,7 @@ namespace dot {
         }
         _prevpixel = led.point(_x, _y) ? 1 : 0;
         led.plotBrightness(_x, _y, 255);
-        basic.pause(_turtleSpeed * 100)
+        basic.pause((10 - _turtleSpeed) * 100)
     }
 
     /**
@@ -159,7 +160,7 @@ namespace dot {
      */
     //% blockId=clear_screen
     //% block="clear screen"
-    //% weight=400
+    //% weight=390
     export function clearScreen(): void {
         basic.clearScreen()
         home();
@@ -170,7 +171,7 @@ namespace dot {
      */
     //% blockId=fill_screen
     //% block="fill screen"
-    //% weight=390
+    //% weight=400
     export function fillScreen(): void {
         for (let i = 0; i < 5; i++) {
             for (let j = 0; j < 5; j++) {
