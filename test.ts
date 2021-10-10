@@ -17,5 +17,7 @@ dot.forward();
 dot.turnRight();
 dot.forward();
 dot.turnRight();
-dot.forward();
-dot.forward();
+for (let i = 0; i < 3; i++) {
+    dot.forward();
+}
+
