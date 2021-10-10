@@ -151,6 +151,7 @@ namespace dot {
     //% weight=500
     export function erase(): void {
         led.plotBrightness(_x, _y, 0);
+        _prevpixel = led.point(_x, _y) ? 1 : 0;
     }
 
     /**
@@ -171,15 +172,11 @@ namespace dot {
     //% block="fill screen"
     //% weight=390
     export function fillScreen(): void {
-        led.setBrightness(100)
-        let img = images.createImage(`
-            # # # # #
-            # # # # #
-            # # # # #
-            # # # # #
-            # # # # #
-        `);
-        img.showImage(0);
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j < 5; j++) {
+                led.plotBrightness(i, j, 100);
+            }
+        }
         home();
     }
 
