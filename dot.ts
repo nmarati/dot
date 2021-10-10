@@ -1,12 +1,5 @@
-
 /**
- * Use this file to define custom functions and blocks.
- * Read more at https://makecode.microbit.org/blocks/custom
- */
-
-
-/**
- * Kodely Turtle
+ * Kodely dot an implementation of LOGO turtle
  */
 //% weight=100 color=#0fbc11 icon="\uf111"
 namespace dot {
@@ -27,7 +20,7 @@ namespace dot {
      * Sets the turtle to home position
      */
     //% blockId=turtlehome
-    //% block="goto start"
+    //% block="home"
     //% weight=1000
     export function home(): void {
         // Add code here
@@ -48,6 +41,7 @@ namespace dot {
     export function penUp(): void {
         _pen = 0;
     }
+
     /**
      * Turn the pen on, so will write as the turtle moves
      */
@@ -77,7 +71,7 @@ namespace dot {
     //% blockId=turtleright
     //% block="turn right"
     //% weight=700
-    export function turnright(): void {
+    export function turnRight(): void {
         _direction = _direction + 1 > 4 ? 1 : _direction + 1;
     }
 
@@ -87,7 +81,7 @@ namespace dot {
     //% blockId=turtleleft
     //% block="turn left"
     //% weight=690
-    export function turnleft(): void {
+    export function turnLeft(): void {
         _direction = _direction - 1 < 1 ? 4 : _direction - 1;
     }
 
@@ -159,7 +153,6 @@ namespace dot {
         led.plotBrightness(_x, _y, 0);
     }
 
-
     /**
      * Clear the screen
      */
@@ -176,7 +169,7 @@ namespace dot {
      */
     //% blockId=fill_screen
     //% block="fill screen"
-    //% weight=400
+    //% weight=390
     export function fillScreen(): void {
         led.setBrightness(100)
         let img = images.createImage(`
@@ -189,6 +182,5 @@ namespace dot {
         img.showImage(0);
         home();
     }
-
 
 }

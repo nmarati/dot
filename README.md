@@ -1,7 +1,11 @@
+# Kodely.io extension for dot an implementation of turtle
 
-> Open this page at [https://kodely-io.github.io/dot/](https://kodely-io.github.io/dot/)
+A microbit extension for dot an implementation of turtle 
 
-## Use as Extension
+## Kodely dot
+
+* home 
+dot.home()
 
 This repository can be added as an **extension** in MakeCode.
 
@@ -10,13 +14,6 @@ This repository can be added as an **extension** in MakeCode.
 * click on **Extensions** under the gearwheel menu
 * search for **https://github.com/kodely-io/dot** and import
 
-## Edit this project ![Build status badge](https://github.com/kodely-io/dot/workflows/MakeCode/badge.svg)
-
-To edit this repository in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/kodely-io/dot** and click import
 
 ## Blocks preview
 
