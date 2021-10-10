@@ -22,7 +22,7 @@ namespace dot {
     //% blockId=turtlehome
     //% block="home"
     //% weight=1000
-    //% help=dot/home
+    //% help=home
     export function home(): void {
         // Add code here
         led.plotBrightness(_x, _y, _prevpixel * 100)
@@ -39,6 +39,7 @@ namespace dot {
     //% blockId=turtle_pen_up
     //% block="penUp"
     //% weight=900
+    //% help=penup
     export function penUp(): void {
         _pen = 0;
     }
@@ -49,6 +50,7 @@ namespace dot {
     //% blockId=turtle_pen_down
     //% block="penDown"
     //% weight=890
+    //% help=pendown
     export function penDown(): void {
         _pen = 1;
     }
@@ -62,6 +64,7 @@ namespace dot {
     //% block="speed %turtleSpeed"
     //% turtleSpeed.min=1 turtleSpeed.max=10 turtleSpeed.defl=5
     //% weight=350
+    //% help=speed
     export function speed(turtleSpeed: number): void {
         _turtleSpeed = turtleSpeed;
     }
@@ -72,6 +75,7 @@ namespace dot {
     //% blockId=turtleright
     //% block="turn right"
     //% weight=700
+    //% help=turnright
     export function turnRight(): void {
         _direction = _direction + 1 > 4 ? 1 : _direction + 1;
     }
@@ -82,6 +86,7 @@ namespace dot {
     //% blockId=turtleleft
     //% block="turn left"
     //% weight=690
+    //% help=turnleft
     export function turnLeft(): void {
         _direction = _direction - 1 < 1 ? 4 : _direction - 1;
     }
@@ -92,6 +97,7 @@ namespace dot {
     //% blockId=turtle_move_forward
     //% block="move forward"
     //% weight=650
+    //% help=moveForward
     export function moveForward(): void {
         let _incr = 1;
         if (_direction == 1 || _direction == 4) _incr = -1
@@ -121,6 +127,7 @@ namespace dot {
     //% blockId=turtle_move_backward
     //% block="move backward"
     //% weight=600
+    //% help=movebackward
     export function moveBackward(): void {
         let _incr = -1;
         if (_direction == 1 || _direction == 4) _incr = 1
@@ -150,6 +157,7 @@ namespace dot {
     //% blockId=erase
     //% block="erase"
     //% weight=500
+    //% help=erase
     export function erase(): void {
         led.plotBrightness(_x, _y, 0);
         _prevpixel = led.point(_x, _y) ? 1 : 0;
@@ -161,6 +169,7 @@ namespace dot {
     //% blockId=clear_screen
     //% block="clear screen"
     //% weight=390
+    //% help=clearscreen
     export function clearScreen(): void {
         basic.clearScreen()
         home();
@@ -172,6 +181,7 @@ namespace dot {
     //% blockId=fill_screen
     //% block="fill screen"
     //% weight=400
+    //% help=fillscreen
     export function fillScreen(): void {
         for (let i = 0; i < 5; i++) {
             for (let j = 0; j < 5; j++) {

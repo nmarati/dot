@@ -8,68 +8,68 @@ A micro:bit extension for **dot** an implementation of LOGO like turtle.
 ## home #home
 `dot.home()` moves the **dot** to the center of the screen. **dot** will be facing forward and pen will be in down mode
 
-```sig
+```blocks
 dot.home()
 ```
-## move forward #move_forward
+## move forward #moveforward
 `dot.moveForward()` moves the **dot** one step forward, in the current direction. If the pen is set to down,  it will highlight the LED in that position.
 
-```javascript
-dot.moveForward();
+```blocks
+dot.moveForward()
 ```
-## move backward #move_backward
+## move backward #movebackward
 `dot.moveBackward()` moves the **dot** one step backward based on the current direction. If the pen is set to down, it will highlight the LED in that position.
 
-```javascript
-dot.moveBackward();
+```blocks
+dot.moveBackward()
 ```
-## turn right #turn_right
+## turn right #turnright
 `dot.turnRight()` turns the **dot** to the right 90 degrees.
 
-```javascript
-dot.turnRight();
+```blocks
+dot.turnRight()
 ```
-## turn left #turn_left
+## turn left #turnleft
 `dot.turnLeft()` turns the **dot** to the left 90 degrees.
 
-```javascript
-dot.turnLeft();
+```blocks
+dot.turnLeft()
 ```
 ## penDown #pendown
 `dot.penDown()` sets the **dot**  draw mode to ON. Turns the LEDs when it moves.
 
-```javascript
-dot.penDown();
+```blocks
+dot.penDown()
 ```
 ## penUp #penup
 `dot.penUp()` sets the **dot** draw mode to OFF. Does not the LEDs when it moves.
 
-```javascript
-dot.penUp();
+```blocks
+dot.penUp()
 ```
 ## erase #erase
 `dot.erase()` turns OFF the LED at the current position.
 
-```javascript
-dot.erase();
+```blocks
+dot.erase()
 ```
 ## fillScreen #fillscreen
 `dot.fillScreen()` turns ON all the LEDs on the screen and sets **dot** to home position.
 
-```javascript
-dot.fillScreen();
+```blocks
+dot.fillScreen()
 ```
 ## clearScreen #clearscreen
 `dot.clearScreen()` turns OFF all the LEDs on the screen and sets **dot** to home position.
 
-```javascript
-dot.clearScreen();
+```blocks
+dot.clearScreen()
 ```
 ## speed #speed
 `dot.speed()` determines the speed of how fast **dot** moves on the screen. It is set to default speed of 5.
 
-```javascript
-dot.speed();
+```blocks
+dot.speed()
 ```
 
 # License
