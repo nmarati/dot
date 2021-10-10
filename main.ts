@@ -33,7 +33,8 @@ namespace dot {
         // Add code here
         led.plotBrightness(_x, _y, _prevpixel * 100)
         _x = _y = _prevx = _prevy = 2;
-        _prevpixel = led.point(_x, _y) ? 1 : 0;
+        _direction = 1;
+        _prevpixel = 0;
         led.plotBrightness(_x, _y, 255);
 
     }
