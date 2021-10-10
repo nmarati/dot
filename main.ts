@@ -8,7 +8,7 @@
 /**
  * Kodely Turtle
  */
-//% weight=100 color=#0fbc11 icon=""
+//% weight=100 color=#0fbc11 icon="\uf111"
 namespace dot {
 
     //% block
