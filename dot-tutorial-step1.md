@@ -1,6 +1,6 @@
 # Setup dot and move dot forward
 
-## Setting Up Dot
+## Setting Up Dot @unplugged
 
 To set up dot copy this link: https://github.com/Kodely-io/dot
 
