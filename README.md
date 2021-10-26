@@ -1,7 +1,11 @@
 # Kodley dot 
 
-A micro:bit extension for **dot** an implementation of LOGO like turtle. 
+A micro:bit extension for **dot**, an implementation of LOGO like turtle. 
 **dot** is a single pixel LED that can be moved around the micro:bit screen. Primary focus of **dot**, is to introduce concepts like sequencing, loops etc.
+
+Using **dot**, students can work on various patterns/puzzles such as drawing a line, creating shapes like 
+ a square, a triangle, or forming numbers and letters using LEDs. To get **dot** to complete the puzzles, students experience how to break down puzzles into simple, repeatable steps and, in the process, learn the importance of making sure the steps in the program are written in the correct sequence. Students will practice their sequencing and debugging skills while completing the puzzles and learn how to order **dot** commands such as move forward, move backward, change directions using turn left or turn right as sequential steps in a program.
+
 
 ## Setup & Intro Videos
 
