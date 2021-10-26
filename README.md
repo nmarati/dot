@@ -14,13 +14,13 @@ dot introductory videos
 ## dot Tutorials 
 Tutorials to get you started with dot
 
-[dot Tutorial 1](https://makecode.microbit.org/#tutorial:github:kodely-io/dottest/dotstep1)  
+[dot Tutorial 1](https://makecode.microbit.org/#tutorial:github:kodely-io/dottutorials/dotstep1)  
 
-[dot Tutorial 2](https://makecode.microbit.org/#tutorial:github:kodely-io/dottest/dotstep2)  
+[dot Tutorial 2](https://makecode.microbit.org/#tutorial:github:kodely-io/dottutorials/dotstep2)  
 
-[dot Tutorial 3](https://makecode.microbit.org/#tutorial:github:kodely-io/dottest/dotstep3)  
+[dot Tutorial 3](https://makecode.microbit.org/#tutorial:github:kodely-io/dottutorials/dotstep3)  
 
-[dot Tutorial 4](https://makecode.microbit.org/#tutorial:github:kodely-io/dottest/dotstep4)  
+[dot Tutorial 4](https://makecode.microbit.org/#tutorial:github:kodely-io/dottutorials/dotstep4)  
 
 # Kodely dot reference
 
