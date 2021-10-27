@@ -18,13 +18,13 @@ dot introductory videos
 ## dot Tutorials 
 Tutorials to get you started with dot
 
-[dot Tutorial 1](https://makecode.microbit.org/#tutorial:github:kodely-io/dottutorials/dotstep1)  
+[Learning to use move forward block](https://makecode.microbit.org/#tutorial:github:kodely-io/dottutorials/dotstep1)  
 
-[dot Tutorial 2](https://makecode.microbit.org/#tutorial:github:kodely-io/dottutorials/dotstep2)  
+[Learning to use move backward block](https://makecode.microbit.org/#tutorial:github:kodely-io/dottutorials/dotstep2)  
 
-[dot Tutorial 3](https://makecode.microbit.org/#tutorial:github:kodely-io/dottutorials/dotstep3)  
+[Using move forward and move backward blocks](https://makecode.microbit.org/#tutorial:github:kodely-io/dottutorials/dotstep3)  
 
-[dot Tutorial 4](https://makecode.microbit.org/#tutorial:github:kodely-io/dottutorials/dotstep4)  
+[Using turn left and turn right blocks](https://makecode.microbit.org/#tutorial:github:kodely-io/dottutorials/dotstep4)  
 
 # Kodely dot reference
 
